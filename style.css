@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #59A5D8;
+    color:white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#133C55;
+    font-family:"Bebas Neue";
+    color: white;
+    margin-left:5vw;
+}
+header nav {
+    font-family: arial;
+    font-size:large;
+    font-weight: 800;
+    margin-right: 5vw;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li:first-child {
+    margin-left: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration:none;
+}
+.Page {
+    margin: 7vw;
+    padding: 20px;
+    width: 84vw;
+    background-color: #133C55;
+    box-shadow: 0 0 50px black;
+    border-radius: 10px; 
+}
+.text {
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    font-size:x-large;
+    margin: 8vw;
+    padding:0;
+    margin-bottom:3vw;
+    margin-top:2vw;
+}
+.text h1 {
+    padding:0;
+    margin-bottom:0;
+}
+.text h2 {
+    color:#59A5D8;
+    padding:0;
+    margin-top:0;
+}
+.biocontainer {
+    display:flex;
+}
+.bio {
+    justify-content:left;
+    align-items: left;
+    max-width: 40%;
+    padding-right:11vw;
+    float:left;
+}
+.portrait {
+    max-width:90%;
+    border: 3px solid white
+}
+.portraitcontainer {
+    float: right;
+}
+.scuba {
+    width:300px;
+    border: 3px solid white;
+}
+.drawing {
+    width:300px;
+    border: 3px solid white;
+}
+.hiking {
+    width:300px;
+    border: 3px solid white;
+}
+.interestcontainer {
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+}
+footer {
+    margin-left:5vw;
+}
+@media screen and (max-width: 768px) {
+    .text {
+        float:none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+        width: 80%;
+    }
+    .imagecontainer {
+        float:none;
+        max-width: 100%;
+        max-height:auto;
+    }
+}
