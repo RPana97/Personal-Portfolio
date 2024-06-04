@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #59A5D8;
+    background:linear-gradient(to top,#59A5D8, #133C55);
     color:white;
 }
 header {
@@ -39,7 +43,7 @@ nav ul li a {
 }
 .Page {
     margin: 7vw;
-    padding: 20px;
+    padding: 5px;
     width: 84vw;
     background-color: #133C55;
     box-shadow: 0 0 50px black;
@@ -79,7 +83,10 @@ nav ul li a {
     border: 3px solid white
 }
 .portraitcontainer {
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
 }
 .scuba {
     width:300px;
@@ -98,21 +105,89 @@ nav ul li a {
     justify-content: center;
     padding:30px;
 }
+.projects {
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.projects h3 {
+    text-align: center;
+    color:white;
+}
+.projects div {
+    flex:1;
+    min-width: 100px;
+    max-width: 300px;
+    margin: 0 10px;
+}
 footer {
     margin-left:5vw;
 }
 @media screen and (max-width: 768px) {
-    .text {
-        float:none;
-        flex-wrap: wrap;
+    .page {
+        display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:20px;
+    }
+    header {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin:0;
+    }
+    .text {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left:20px;
         width: 80%;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin:0;
+    }
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .text h1 {
+        text-align: center;
+    }
+    .text h2 {
+        text-align:center;
     }
     .imagecontainer {
         float:none;
         max-width: 100%;
         max-height:auto;
     }
+    .biocontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bio {
+        padding-right: 0;
+        margin-bottom: 20px; 
+        text-align: center; 
+        max-width: 100%; 
+    }
+    .portraitcontainer {
+        max-width: 100%;
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        margin:0;
+        text-align: center;
+    }
 }
+
